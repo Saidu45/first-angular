@@ -1,7 +1,7 @@
 {
   "name": "sierra-leone-app",
   "version": "0.0.0",
-  "homepage": "https://saidu45.github.io/gh-pages-angular/",
+  "homepage": "https://saidu45.github.io/first-angular/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
