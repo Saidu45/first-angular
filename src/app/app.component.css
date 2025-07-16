@@ -1,0 +1,118 @@
+/* app.component.css */
+
+/* Reset and base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #a8d5ba, #4a7c59);
+  color: #2d3a2f;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+/* Header */
+h1 {
+  color: #1b4d3e;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 2rem 0 1rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.15);
+}
+
+/* Sections: Facts and Landmarks */
+.facts, .landmarks {
+  background: #fff;
+  max-width: 800px;
+  width: 100%;
+  margin: 1rem auto 2rem;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.facts:hover, .landmarks:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #3a5a40;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #a8d5ba;
+  padding-bottom: 0.3rem;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  color: #495c40;
+}
+
+/* Custom bullet using pseudo element */
+ul li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #4a7c59;
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+/* Landmark item style */
+.landmarks li strong {
+  color: #1b4d3e;
+  font-weight: 700;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  max-width: 800px;
+  margin: 3rem auto 2rem;
+  text-align: center;
+  color: #3a5a40;
+  font-size: 1rem;
+  font-style: italic;
+  user-select: none;
+  border-top: 1px solid #a8d5ba;
+  padding-top: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .facts, .landmarks {
+    padding: 1.5rem 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  ul li {
+    font-size: 1rem;
+  }
+}

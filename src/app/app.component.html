@@ -1,0 +1,23 @@
+<!-- app.component.html -->
+
+<h1>{{ title }}</h1>
+
+<section class="facts">
+  <h2>Quick Facts</h2>
+  <ul>
+    <li *ngFor="let fact of facts">{{ fact }}</li>
+  </ul>
+</section>
+
+<section class="landmarks">
+  <h2>Famous Landmarks</h2>
+  <ul>
+    <li *ngFor="let landmark of landmarks">
+      <strong>{{ landmark.name }}</strong>: {{ landmark.description }}
+    </li>
+  </ul>
+</section>
+
+<footer>
+  <p>&copy; {{ currentYear }} Sierra Leone Tourism</p>
+</footer>
